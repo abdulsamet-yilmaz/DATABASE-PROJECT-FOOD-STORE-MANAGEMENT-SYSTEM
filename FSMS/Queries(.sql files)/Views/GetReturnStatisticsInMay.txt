@@ -1,0 +1,10 @@
+Create View GetReturnStatisticsInMay
+As
+Select p.ProductName, p.ProductClass, SUM(rtc.TotalPrice) TotRetRevenue,
+SUM(rtc.Quantity) TotRetQuantity,count(*) NoOfReturns
+From RETURN_TO_COMPANY rtc inner join PRODUCT p ON rtc.Barcode = p.Barcode
+WHERE rt.ReturnDate <= DATE1 AND rt.ReturnDate >= DATE2
+GROUP BY p.ProductName
+
+
+

@@ -1,0 +1,25 @@
+Trg_UpdateTotalColumnOfPurchase:
+It updates total columns when an insertion is happened to Purchase table. It also add purchase amount in to stockAmount
+field of related product record.
+
+
+Trg_UpdateTotalColumnsOfCustReturn:
+It updates total columns when an insertion is happened to CustomerReturn table. It also add return amount in to
+stockAmount field of related product record.
+
+
+Trg_UpdateTotalColumnsOfSale:
+It updates total columns when an insertion is happened to Sale table. It also subtract return amount from stockAmount
+field of related product record.
+
+
+Trg_UpdTotalClmnOfProductDest:
+It updates total columns when an insertion is happened to ProductDestruction table. It also subtract destruction amount
+from stockAmount field of related product record.
+
+
+Trg_UpdTotalClmnOfReturnToComp:
+It updates total columns when an insertion is happened to ReturnToCompany table. It also subtract return amount from
+stockAmount field of related product record.
+
+
